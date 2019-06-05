@@ -26,7 +26,7 @@ public class AnimalFactoryTest {
         Integer expectedID = dogHouse.getNumberOfDogs();
 
         // When
-        Animal dogChecker = AnimalFactory.createDog(expectedName,expectedBirthDate);
+        Dog dogChecker = AnimalFactory.createDog(expectedName,expectedBirthDate);
 
         // Then
         String actualName = dogChecker.getName();
