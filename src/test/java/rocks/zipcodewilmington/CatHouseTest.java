@@ -23,6 +23,7 @@ public class CatHouseTest {
     }
 
     // TODO - Create tests for `void remove(Integer id)`
+    @Test
     public void testRemoveCatByID(){
         int testID=5;
         Cat expected = null;
@@ -36,6 +37,7 @@ public class CatHouseTest {
     }
 
     // TODO - Create tests for `void remove(Cat cat)`
+    @Test
     public void testRemoveCat(){
         int testID=5;
         Cat expected = null;
