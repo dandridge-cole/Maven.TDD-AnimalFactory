@@ -44,7 +44,8 @@ public class DogTest {
     @Test
     public void setBDTest(){
         Date expected=new Date("12/15/06");
-        Dog dog = new Dog(" ",expected,null);
+        Dog dog = new Dog(" ",null,null);
+        dog.setBirthDate(expected);
         Date actual =  dog.getBirthDate();
         Assert.assertEquals(expected,actual);
     }

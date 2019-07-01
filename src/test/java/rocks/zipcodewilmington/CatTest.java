@@ -34,7 +34,8 @@ public class CatTest {
     @Test
     public void setBDTest(){
         Date expected=new Date("12/15/06");
-        Cat cat = new Cat(" ",expected,null);
+        Cat cat = new Cat(" ",null,null);
+        cat.setBirthDate(expected);
         Date actual =  cat.getBirthDate();
         Assert.assertEquals(expected,actual);
     }
